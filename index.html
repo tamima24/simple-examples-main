@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    img {
+        width: 100%;
+        height: 100%;
+       
+    }
+
+    .row {
+        height: 300px;
+        display: flex;
+        gap: 2px;
+        margin-bottom: 2px;
+
+    }
+
+    .row div {
+        flex: 1;
+    }
+
+    .vertical-collage {
+        display: flex;
+        flex-wrap: wrap;
+        height: calc((100% - 2px)/2);
+        gap: 2px;
+    }
+    .square-collage{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 2px;
+    }
+</style>
+
+<body>
+    <div class="row">
+        <img src="images/A.jpg" alt="">
+    </div>
+    <div class="row">
+        <div>
+            <img src="images/B.jpg" alt="">
+        </div>
+        <div>
+            <img src="images/C.jpg" alt="">
+        </div>
+
+        <div class="vertical-collage">
+            <img src="images/D.jpg" alt="">
+            <img src="images/E.jpg" alt="">
+        </div>
+        
+    </div>
+    <div class="row">
+        <div>
+            <img src="images/F.jpg" alt="">
+        </div>
+        <div class="square-collage">
+            <img src="images/G.jpg" alt="">
+            <img src="images/G.jpg" alt="">
+            <img src="images/G.jpg" alt="">
+            <img src="images/G.jpg" alt="">
+        </div>
+        <div>
+            <img src="images/H.jpg" alt="">
+        </div>
+    </div>
+    
+   
+</body>
+
+</html>
